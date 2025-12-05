@@ -108,14 +108,7 @@ export function RevalidationTestUI({
             {isLoading ? "Revalidating..." : "Revalidate Path"}
           </button>
 
-          <div className="grid grid-cols-3 gap-2">
-            <button
-              onClick={() => handleRevalidate("/")}
-              disabled={isLoading}
-              className="rounded border border-border bg-background px-3 py-2 text-sm text-foreground hover:bg-card disabled:opacity-50"
-            >
-              Revalidate /
-            </button>
+          <div className="grid grid-cols-2 gap-2">
             <button
               onClick={() => handleRevalidate("/de")}
               disabled={isLoading}
